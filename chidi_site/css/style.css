@@ -1,0 +1,146 @@
+body{
+    background: linear-gradient( to bottom, rgb(200, 129, 205), rgba(204, 229, 255, 0.4));
+    font-size: 1.15em;  
+    text-align: justify;
+    font-family: "Roboto", sans-serif; 
+    
+}
+
+#title { 
+    color: rgb(186, 133, 9);
+    font-family: "Nanum Gothic Coding", monospace;
+} 
+
+.subtitle {
+    color: rgb(200, 148, 30);   
+    font-family: "lato" sans-serif;
+}
+
+#service-image {
+    height: 400px; /* ignore this! */
+    width:  70vw;  /* ignore this! */
+
+background: radial-gradient(circle,red 20%, blue 40%, green 50%);
+border: 10px solid rgb(205, 100, 205);
+
+}
+
+.link {
+    text-decoration: underline;
+    
+}
+
+.italics{
+    font-style:italic;
+}
+#about-us-image {
+    height: 300px;
+    width:60%;
+
+    border: 5px solid rgb(200, 148, 30);
+    margin: 80px 40px;
+}
+
+.site-table {
+    display: inline-block;
+    
+}
+
+.container {
+    background-color: rgb(250, 250, 250);
+    margin: 50px;
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-item{
+    background: rgb(36,130,39);
+    color:white;
+    font-size: 25px;
+    text-align:center ;
+
+    width: 70px;
+    line-height: 50px;
+    margin: 10px;
+}
+
+.grid-container{
+    background-color: rgb(250,250,250);
+    margin: 10px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:auto auto auto;
+
+}
+
+.grid-item{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+
+}
+
+.submit-button{
+    margin:20px 10px;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    font-family: "lato", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: rgb(299, 200, 150);
+    transform: matrix(1, 0.45, 0.45, 1 , 255, 50);
+    -webkit-transition: background, padding 500ms ease ;
+    -moz-transition: background, padding 500ms ease ;
+    -o-transition: background, padding 500ms ease ;
+    
+
+
+}
+
+.submit-button:hover{
+    background: rgb(147, 187, 5); 
+    padding:20px 30px ;
+}
+
+#about-me{
+    /*animation-name: red-to-black;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+    animation-direction: reverse;*/
+
+    -webkit-animation:  red-to-black 4s linear 0s 2 alternate-reverse;
+    -moz-animation:  red-to-black 4s linear 0s 2 alternate-reverse;
+    -ms-animation:  red-to-black 4s linear 0s 2 alternate-reverse;
+    -o-animation:  red-to-black 4s linear 0s 2 alternate-reverse;
+
+
+
+}
+
+@keyframes red-to-black{
+    0%{
+        background: red; 
+        transform:  translate(0px,0px);
+      }
+
+    50%{
+        background: yellow;
+        transform: translate( 10px,10px);
+       }
+    100%{
+        background: black; 
+        transform: translate( 20px,20px);
+       }
+}
